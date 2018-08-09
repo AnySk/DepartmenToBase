@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{357B23EB-9EA0-4F8A-B28F-71C7A36F8FAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Department2Base</RootNamespace>
+    <AssemblyName>Department2Base</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>xamarininspector.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\dataBase.cs" />
+    <Compile Include="Code\Documentation.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Additional\ChartTi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Additional\MessageBoxTi.cs" />
+    <Compile Include="UIs\Additional\SidePanelContent\NoteForOperators.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Additional\TextBoxTi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Additional\SplitContainerTi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Main\Admin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Main\Charts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Main\Loading.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Main\NS2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Main\SatelliteList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Additional\SidePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Additional\SidePanelContent\RaportsForOperators.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Main\SSALoading.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code\Supports.cs" />
+    <Compile Include="UIs\Additional\TabControlTi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Additional\Transes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\Additional\SQLRequestFilter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logon.JPG" />
+    <None Include="Resources\trans.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\ex.png" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\backt.png" />
+    <None Include="Resources\newtranswhite.png" />
+    <None Include="Resources\gerb.png" />
+    <None Include="Resources\bombBig.png" />
+    <None Include="Resources\bomb.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\cross1.png" />
+    <None Include="Resources\cross2.png" />
+    <None Include="Resources\cross3.png" />
+    <None Include="Resources\cross4.png" />
+    <None Include="Resources\cross5.png" />
+    <None Include="Resources\cross6.png" />
+    <None Include="Resources\cross7.png" />
+    <None Include="Resources\erase.png" />
+    <None Include="Resources\person.png" />
+    <None Include="Resources\x1tb.png" />
+    <None Include="Resources\x1tw.png" />
+    <None Include="Resources\x2tb.png" />
+    <None Include="Resources\x2tw.png" />
+    <None Include="Resources\x3tb.png" />
+    <None Include="Resources\x3tw.png" />
+    <None Include="Resources\x7tw.png" />
+    <None Include="Resources\x7tb.png" />
+    <None Include="Resources\darkch.png" />
+    <None Include="Resources\darkunch.png" />
+    <None Include="Resources\litech.png" />
+    <None Include="Resources\liteunch.png" />
+    <None Include="Resources\midUs.png" />
+    <None Include="Resources\offUs.png" />
+    <None Include="Resources\onUs.png" />
+    <None Include="Resources\revert.png" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\onoff.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\sandWatch.gif" />
+    <None Include="Resources\cong.gif" />
+    <None Include="Resources\buble.gif" />
+    <None Include="Resources\long.gif" />
+    <Content Include="xamarininspector.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

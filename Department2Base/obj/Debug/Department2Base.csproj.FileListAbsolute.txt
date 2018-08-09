@@ -1,0 +1,13 @@
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\bin\Debug\Department2Base.exe.config
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\bin\Debug\Department2Base.exe
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\bin\Debug\Department2Base.pdb
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\obj\Debug\Department2Base.csprojAssemblyReference.cache
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\obj\Debug\Department2Base.LoginForm.resources
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\obj\Debug\Department2Base.Profile.resources
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\obj\Debug\Department2Base.Properties.Resources.resources
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\obj\Debug\Department2Base.csproj.GenerateResource.cache
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\obj\Debug\Department2Base.csproj.CoreCompileInputs.cache
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\obj\Debug\Department2Base.csproj.CopyComplete
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\obj\Debug\Department2Base.exe
+C:\Users\Timur\Downloads\Project\Department2Base\Department2Base\obj\Debug\Department2Base.pdb
